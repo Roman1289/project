@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Главная</div>
+        <button class="cart-button button" type="button" id="basket-btn">Корзина</button>
+    </header>
+    <main>
+        <section class="product-card-section">
+            <a class="product-card-section__box" href="#" target="blanck">
+                <aside>
+                    <img src="img/photo.png" alt="photo" width="250"> 
+                    <button class="product-card-section_btn-order" data-product-name='headphones' onclick="addItemToCart()">Заказать</button>
+                    <p>Наушники</p>
+                </aside>
+            </a>
+            <a class="product-card-section__box" href="#" target="blanck">
+                <aside>
+                    <img src="img/photo.png" alt="photo" width="250"> 
+                    <button class="product-card-section_btn-order" data-product-name='mouse' onclick="addItemToCart()">Заказать</button>
+                    <p>Мышка</p>
+                </aside>
+            </a>
+            <a class="product-card-section__box" href="#" target="blanck">
+                <aside>
+                    <img src="img/photo.png" alt="photo" width="250"> 
+                    <button class="product-card-section_btn-order" data-product-name='keyboard' onclick="addItemToCart()">Заказать</button>
+                    <p>Клавиатура</p>
+                </aside>
+            </a>
+        </section>
+    </main>
+    <div id="goods-list-section" class="goods-list">
+        <div id="goods-list-section__modal">
+            <input type="submit" value="X" id="goods-list-section__delete">
+            <h3 id="goods-list_head-line">Корзина</h3>
+            <div id="goods-list__product-box"></div>
+            <p id="goods-list__total"></p>
+        </div> 
+    </div>
+    <footer class="footer">Gromov 2021</footer>
+    <script src="script/app.js" defer></script>
+    
+</body>
+</html>
